@@ -1,0 +1,7 @@
+name = Collision
+description = Collision site
+
+dependencies[] = admin_menu_toolbar
+dependencies[] = contextual
+dependencies[] = module_filter
+;dependencies[] = 

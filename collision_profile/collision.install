@@ -1,0 +1,15 @@
+<?php
+define('PROFILE_NAME', 'COLLISION');
+
+include_once DRUPAL_ROOT . '/profiles/nodestream/nodestream.install';
+include_once DRUPAL_ROOT . '/profiles/nodestream/nodestream.profile';
+
+function maximat_install() {
+  drupal_flush_all_caches();
+  nodestream_install();
+  module_list(TRUE);
+  //theme_enable(array('maximat_theme'));
+  //variable_set('theme_default', 'maximat_theme');
+  drupal_flush_all_caches();
+  defaultconfig_rebuild_all();
+}
